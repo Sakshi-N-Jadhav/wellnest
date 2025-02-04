@@ -3,8 +3,8 @@
 const addDoctor = async(req,res) => {
     try{
         const{name, email,password,speciality,degree,experience,about,fees,address} = req.body
-        const imageFile = req.imageFile
-        console.log({name, email,password,speciality,degree,experience,about,fees,addres,imageFile});
+        const imageFile = req.file
+        console.log({name, email,password,speciality,degree,experience,about,fees,address},imageFile);
     }
 
     catch(error)
